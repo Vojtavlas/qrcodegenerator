@@ -10,4 +10,5 @@ qr = qrcode.QRCode(
 qr.add_data(input_data)
 qr.make(fit=True)
 img = qr.make_image(fill='black', back_color='white')
-img.save('qrcode001.png')
+name = input("name of the file : ")
+img.save(name + ".png")
